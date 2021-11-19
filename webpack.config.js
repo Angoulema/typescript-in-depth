@@ -57,6 +57,10 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
   ],
 
+  experiments: {
+    topLevelAwait: true
+  },
+
   // switch on source-map as a separate file: bundle.js.map
   devtool: 'source-map'
 };
